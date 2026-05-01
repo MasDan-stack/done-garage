@@ -32,10 +32,10 @@
     --bg-tertiary: #e8e8e8;
     --bg-card: #ffffff;
     --bg-card-hover: #f0f0f0;
-    --bg-input: #f0f0f0;
+    --bg-input: #e8e8e8;
     --text-primary: #1a1a1a;
-    --text-secondary: #555555;
-    --text-muted: #888888;
+    --text-secondary: #333333;
+    --text-muted: #666666;
     --border-color: rgba(227, 24, 55, 0.15);
     --border-hover: #e31837;
     --shadow-color: rgba(0, 0, 0, 0.1);
