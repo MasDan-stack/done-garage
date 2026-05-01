@@ -1,0 +1,1419 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="D'One Garage - Spesialis Modifikasi Motor, Bore Up, Custom Noken As, Knalpot Racing & Tuning ECU. Layanan Harian, Touring, dan Balap.">
+    <meta name="keywords"
+        content="modifikasi motor, bore up, custom noken as, knalpot racing, tuning ECU, D'One Garage, bengkel motor, drag race">
+    <meta name="author" content="D'One Garage">
+    <meta name="robots" content="index, follow">
+    <meta property="og:image" content="https://donegarage.com/assets/img/og-image.jpg">
+    <meta property="og:title" content="D'One Garage | Modifikasi & Custom Performance">
+    <meta property="og:description"
+        content="Spesialis Modifikasi, Bore Up & Custom Performance Motor. Racing Spirit since 2012.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="id_ID">
+    <meta name="theme-color" content="#e31837">
+    <title>D'One Garage | Modifikasi & Custom Performance Motor</title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon_io/site.webmanifest">
+
+    <link rel="canonical" href="https://donegarage.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/400.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/500.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/600.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/700.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/inter@5.0.0/800.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="animated-bg"></div>
+    <canvas id="bg-canvas"></canvas>
+    <!-- Sticky Header -->
+    <header class="sticky-header" id="navbar">
+        <div class="header-container">
+            <a href="#home" class="logo" aria-label="D'One Garage Home">
+                <img src="assets/img/logo-donegarage.png" alt="D'One Garage Logo" loading="eager">
+                <div class="footer-logo-text">D'<span>ONE</span> GARAGE</div>
+            </a>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#home" class="active"><i class="fas fa-home"></i> Beranda</a>
+                <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+                <a href="#services"><i class="fas fa-cogs"></i> Layanan</a>
+                <a href="#estimator"><i class="fas fa-calculator"></i> Estimator</a>
+                <a href="#gallery"><i class="fas fa-images"></i> Galeri</a>
+                <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+                <a href="#contact"><i class="fas fa-envelope"></i> Kontak</a>
+            </nav>
+            <div class="nav-right">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon" id="themeIcon"></i>
+                </button>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Open menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <button class="mobile-menu-close" id="mobileClose" aria-label="Close menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <a href="#home" class="active"><i class="fas fa-home"></i> Beranda</a>
+        <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+        <a href="#services"><i class="fas fa-cogs"></i> Layanan</a>
+        <a href="#estimator"><i class="fas fa-calculator"></i> Estimator</a>
+        <a href="#gallery"><i class="fas fa-images"></i> Galeri</a>
+        <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+        <a href="#contact"><i class="fas fa-envelope"></i> Kontak</a>
+        <div style="margin-top: 24px;">
+            <a href="https://wa.me/6281288667347" target="_blank" class="btn btn-primary btn-sm"
+                style="width:100%; justify-content:center;">
+                <i class="fab fa-whatsapp"></i> WhatsApp
+            </a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg-image"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-circle"></i>
+                Racing Spirit Sejak 2012
+            </div>
+            <h1 class="hero-title">
+                Spesialis <span class="gradient-text">Modifikasi</span>,<br>
+                Bore Up & Custom<br>
+                Performance
+            </h1>
+            <p class="hero-subtitle">
+                Racing Red, Black, White, and Metallic Silver — identitas kecepatan dan keunggulan.
+                Percayakan motor Anda kepada ahlinya.
+                <strong style="display:block; margin-top:12px;">🔥 Lebih dari 1500 rider puas & melesat lebih
+                    kencang!</strong>
+            </p>
+            <div class="hero-buttons" style="margin-top: 12px;">
+                <small style="color:var(--primary);">⭐ Konsultasi GRATIS + Garansi 100%</small>
+            </div>
+            <div class="hero-buttons">
+                <a href="https://wa.me/6281288667347?text=Halo%20D'One%20Garage%2C%20saya%20ingin%20konsultasi%20modifikasi"
+                    target="_blank" class="btn btn-primary">
+                    <i class="fab fa-whatsapp"></i> Booking via WhatsApp
+                </a>
+                <a href="#gallery" class="btn btn-outline">
+                    <i class="fas fa-images"></i> Lihat Galeri
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat-item">
+                    <div class="hero-stat-number">1500+</div>
+                    <div class="hero-stat-label">Motor Dimodifikasi</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-number">12+</div>
+                    <div class="hero-stat-label">Tahun Pengalaman</div>
+                </div>
+                <div class="hero-stat-item">
+                    <div class="hero-stat-number">100%</div>
+                    <div class="hero-stat-label">Kepuasan Pelanggan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <img src="assets/img/donegarage.png" alt="D'One Garage Workshop - Bengkel Modifikasi Motor"
+                        loading="lazy">
+                </div>
+                <div class="about-text reveal reveal-delay-2">
+                    <div class="section-tag">
+                        <i class="fas fa-info-circle"></i> Tentang Kami
+                    </div>
+                    <h2 style="font-size: 2rem; font-weight: 800; margin-bottom: 20px; color: var(--text-primary);">
+                        Tentang <span class="text-primary">D'One Garage</span></h2>
+                    <p>
+                        D'One Garage lahir dari passion terhadap dunia balap dan modifikasi motor. Kami menggabungkan
+                        teknologi modern, presisi tinggi, dan pengalaman puluhan tahun untuk menciptakan performa
+                        maksimal pada setiap motor.
+                    </p>
+                    <p>
+                        Dari bore up, custom noken as, hingga tuning ECU — setiap pekerjaan kami handle dengan standar
+                        garasi premium. Racing Red, Black, White, and Metallic Silver — bukan cuma warna, tapi identitas
+                        kecepatan dan keunggulan.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">1500+</span>
+                            <div class="stat-label">Motor Dimodifikasi</div>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">12+</span>
+                            <div class="stat-label">Tahun Pengalaman</div>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">100%</span>
+                            <div class="stat-label">Kepuasan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <i class="fas fa-cogs"></i> Layanan Kami
+                </div>
+                <h2>Layanan Premium</h2>
+                <p>Pilih paket modifikasi sesuai kebutuhan Anda — dari harian hingga balap profesional.</p>
+                <div class="carbon-line"></div>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="card-icon"><i class="fas fa-motorcycle"></i></div>
+                    <h3>Paket Harian</h3>
+                    <p>Servis & modifikasi ringan, setup harian performa seimbang untuk penggunaan sehari-hari.</p>
+                    <div class="price-tag">Rp1.500.000 - Rp4.000.000</div>
+                </div>
+                <div class="service-card reveal reveal-delay-1">
+                    <div class="card-icon"><i class="fas fa-road"></i></div>
+                    <h3>Paket Touring</h3>
+                    <p>Durabilitas tinggi, cooling upgrade, power stabil untuk perjalanan jarak jauh yang nyaman.</p>
+                    <div class="price-tag">Rp4.000.000 - Rp8.000.000</div>
+                </div>
+                <div class="service-card reveal reveal-delay-2">
+                    <div class="card-icon"><i class="fas fa-flag-checkered"></i></div>
+                    <h3>Paket Balap</h3>
+                    <p>Full race spec, bore up, noken as racing, ECU tuning untuk performa maksimal di lintasan.</p>
+                    <div class="price-tag">Rp8.000.000 - Rp20.000.000+</div>
+                </div>
+            </div>
+
+            <div class="custom-services reveal">
+                <div class="custom-service-tag"><i class="fas fa-cog"></i> Custom Noken As</div>
+                <div class="custom-service-tag"><i class="fas fa-wind"></i> Custom Knalpot</div>
+                <div class="custom-service-tag"><i class="fas fa-expand-arrows-alt"></i> Bore Up All Varian</div>
+                <div class="custom-service-tag"><i class="fas fa-microchip"></i> ECU Tuning</div>
+                <div class="custom-service-tag"><i class="fas fa-tachometer-alt"></i> Dyno Test</div>
+                <div class="custom-service-tag"><i class="fas fa-tools"></i> Porting & Polish</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimator Section -->
+    <section id="estimator">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <i class="fas fa-calculator"></i> Simulasi Biaya
+                </div>
+                <h2>Estimasi Biaya Modifikasi</h2>
+                <p>Gunakan simulator untuk mendapatkan perkiraan biaya modifikasi motor Anda.</p>
+                <div class="carbon-line"></div>
+            </div>
+
+            <div class="estimator-card reveal">
+                <div class="estimator-form">
+                    <div class="form-group">
+                        <label><i class="fas fa-motorcycle"></i> Pilih Motor</label>
+                        <select id="motorSelect">
+                            <option value="">-- Pilih Tipe Motor --</option>
+                            <option value="beat">Honda Beat</option>
+                            <option value="nmax">Yamaha NMAX</option>
+                            <option value="vario">Honda Vario 160</option>
+                            <option value="r15">Yamaha R15</option>
+                            <option value="satria">Suzuki Satria FU</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label><i class="fas fa-box"></i> Paket Modifikasi</label>
+                        <select id="paketSelect">
+                            <option value="">-- Pilih Paket --</option>
+                            <option value="harian">Paket Harian (Rp1.5jt - 4jt)</option>
+                            <option value="touring">Paket Touring (Rp4jt - 8jt)</option>
+                            <option value="balap">Paket Balap (Rp8jt - 20jt+)</option>
+                        </select>
+                    </div>
+                    <div class="checkbox-group">
+                        <label
+                            style="font-weight:700; color:var(--primary); margin-bottom:8px; display:block; font-size:0.9rem;">
+                            <i class="fas fa-plus-circle"></i> Upgrade Tambahan:
+                        </label>
+                        <div class="check-grid">
+                            <label><input type="checkbox" value="nokenas"> Custom Noken As</label>
+                            <label><input type="checkbox" value="stage2"> Stage 2 Noken</label>
+                            <label><input type="checkbox" value="knalpot"> Knalpot Racing</label>
+                            <label><input type="checkbox" value="boreup180"> Bore Up 180</label>
+                            <label><input type="checkbox" value="boreup200"> Bore Up 200</label>
+                            <label><input type="checkbox" value="porting"> Porting & Polish</label>
+                            <label><input type="checkbox" value="ecu"> ECU Tune</label>
+                            <label><input type="checkbox" value="dyno"> Dyno Test</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+    <label><i class="fas fa-filter"></i> Filter Budget (Opsional)</label>
+    <select id="budgetSelect">
+        <option value="">-- Pilih Budget Maksimal --</option>
+        <option value="3000000">< Rp 3 Juta</option>
+        <option value="5000000">Rp 3 - 5 Juta</option>
+        <option value="10000000">Rp 5 - 10 Juta</option>
+        <option value="999999999">Rp 10 Juta+</option>
+    </select>
+</div>
+                    <button class="btn btn-primary" onclick="hitungEstimasi()"
+                        style="width:100%; justify-content:center;">
+                        <i class="fas fa-calculator"></i> Hitung Estimasi
+                    </button>
+                </div>
+                <div class="estimator-result">
+                    <div class="result-icon">💰</div>
+                    <h3 style="color:var(--text-primary); margin-bottom:8px;">Estimasi Biaya</h3>
+                    <div class="result-price" id="resultPrice">-</div>
+                    <p class="result-text" id="resultText">Pilih opsi dan klik hitung</p>
+                    <div class="recommended-setup" id="recommendedSetup" style="display:none;"></div>
+                    <button id="saveEstimateBtn" class="btn btn-outline btn-sm" style="margin-top:8px; width:100%;">
+    <i class="fas fa-save"></i> Simpan Estimasi
+</button>
+                    <a href="https://wa.me/6281288667347?text=Halo%20D'One%20Garage%2C%20saya%20ingin%20konsultasi%20modifikasi%20berdasarkan%20simulator"
+                        target="_blank" class="btn btn-wa btn-sm" style="margin-top:12px;">
+                        <i class="fab fa-whatsapp"></i> Konsultasi via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <i class="fas fa-images"></i> Portfolio
+                </div>
+                <h2>Gallery & Video Preview</h2>
+                <p>Lihat hasil karya modifikasi dari D'One Garage.</p>
+                <div class="carbon-line"></div>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <span class="gallery-badge">Custom</span>
+                    <img src="https://placehold.co/600x450/1a1a1a/e31837?text=Motor+Custom+1"
+                        alt="Motor Custom 1 - D'One Garage" loading="lazy">
+                </div>
+                <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(this)">
+                    <span class="gallery-badge">Dyno</span>
+                    <img src="https://placehold.co/600x450/222222/e31837?text=Dyno+Test" alt="Dyno Test - D'One Garage"
+                        loading="lazy">
+                </div>
+                <div class="gallery-item video-preview reveal reveal-delay-2" onclick="openLightbox(this)">
+                    <span class="gallery-badge"><i class="fas fa-play"></i> Video</span>
+                    <img src="https://placehold.co/600x450/333333/e31837?text=Video+Review"
+                        alt="Video Review - D'One Garage" loading="lazy">
+                    <div class="video-overlay">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Video Review</span>
+                    </div>
+                </div>
+                <div class="gallery-item reveal" onclick="openLightbox(this)">
+                    <span class="gallery-badge">Bore Up</span>
+                    <img src="https://placehold.co/600x450/1a1a1a/e31837?text=Bore+Up+Process"
+                        alt="Bore Up Process - D'One Garage" loading="lazy">
+                </div>
+                <div class="gallery-item reveal reveal-delay-1" onclick="openLightbox(this)">
+                    <span class="gallery-badge">Custom</span>
+                    <img src="https://placehold.co/600x450/2a2a2a/e31837?text=Knalpot+Custom"
+                        alt="Knalpot Custom - D'One Garage" loading="lazy">
+                </div>
+                <div class="gallery-item video-preview reveal reveal-delay-2" onclick="openLightbox(this)">
+                    <span class="gallery-badge"><i class="fas fa-play"></i> Video</span>
+                    <img src="https://placehold.co/600x450/333333/e31837?text=Drag+Race" alt="Drag Race - D'One Garage"
+                        loading="lazy">
+                    <div class="video-overlay">
+                        <i class="fas fa-play-circle"></i>
+                        <span>Drag Race</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <i class="fas fa-question-circle"></i> FAQ
+                </div>
+                <h2>Pertanyaan Umum</h2>
+                <p>Kumpulan pertanyaan yang sering diajukan oleh pelanggan kami.</p>
+                <div class="carbon-line"></div>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item reveal">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa lama proses modifikasi motor?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Waktu pengerjaan tergantung tingkat kompleksitas modifikasi. Untuk servis harian biasanya 1-2
+                            hari, paket touring 3-5 hari, dan paket balap full spec bisa 7-14 hari kerja. Kami akan
+                            memberikan estimasi waktu yang jelas sebelum pengerjaan dimulai.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-1">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah bisa custom noken as sesuai request?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tentu! Kami menerima custom noken as sesuai kebutuhan dan request Anda. Tim mekanik kami
+                            berpengalaman dalam grinding noken as untuk berbagai tipe motor. Anda bisa konsultasi
+                            langsung via WhatsApp untuk detail spesifikasi yang diinginkan.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-2">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah ada garansi setelah modifikasi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, setiap hasil modifikasi kami mendapat garansi pengerjaan. Kami juga menyediakan free
+                            check-up setelah 1 minggu pemakaian untuk memastikan semua komponen berfungsi optimal.
+                            Garansi detail akan disampaikan saat konsultasi.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Berapa biaya bore up untuk motor saya?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Biaya bore up bervariasi tergantung tipe motor dan tingkat bore up yang diinginkan (180cc,
+                            200cc, dst). Gunakan simulator estimasi di atas untuk perkiraan biaya, atau hubungi kami
+                            langsung untuk penawaran yang lebih akurat.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-1">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah bisa custom knalpot racing?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, kami menerima pembuatan custom knalpot racing sesuai spesifikasi dan kebutuhan Anda.
+                            Mulai dari bahan, diameter pipa, hingga suara yang diinginkan bisa dikustomisasi. Kami juga
+                            menyediakan knalpot racing dari berbagai brand ternama.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal reveal-delay-2">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Bagaimana cara booking jadwal modifikasi?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Anda bisa booking jadwal melalui WhatsApp di nomor 0812-8866-7347. Cukup kirim detail motor
+                            Anda dan jenis modifikasi yang diinginkan, tim kami akan merespons dengan cepat untuk
+                            konfirmasi jadwal dan estimasi biaya.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>Apakah D'One Garage melayani motor matic dan sport?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, kami melayani semua varian motor — baik matic (Beat, Vario, NMAX, dll) maupun sport (R15,
+                            Satria FU, dll). Setiap motor dikerjakan dengan standar presisi tinggi sesuai karakteristik
+                            masing-masing tipe.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <i class="fas fa-star"></i> Testimoni
+                </div>
+                <h2>Apa Kata Pelanggan Kami</h2>
+                <p>Kepuasan pelanggan adalah prioritas utama kami.</p>
+                <div class="carbon-line"></div>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Motor saya jadi sangat responsif setelah bore up 200cc dan tuning ECU di D'One Garage.
+                        Recommended banget!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Rizky</h4>
+                            <span>MX King</span>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-1">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Paket Touring bikin motor NMAX saya irit dan nyaman buat perjalanan jauh. Thanks tim D'One!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">S</div>
+                        <div class="author-info">
+                            <h4>Siska</h4>
+                            <span>NMAX</span>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+                <div class="testimonial-card reveal reveal-delay-2">
+                    <div class="testimonial-quote"><i class="fas fa-quote-left"></i></div>
+                    <p>"Hasil modifikasi balap sangat ganas, drag race konsisten. Garasi terbaik di Indonesia."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <h4>Andi</h4>
+                            <span>Vario 160</span>
+                        </div>
+                    </div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted Brands Section -->
+    <section id="brands">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <i class="fas fa-certificate"></i> Trusted Brands
+                </div>
+                <h2>Partner & Brand <span class="highlight">Terpercaya</span></h2>
+                <p>Menggunakan part motor berkualitas dari brand terbaik</p>
+                <div class="carbon-line"></div>
+            </div>
+
+            <div class="brands-grid reveal">
+                <div class="brand-item">
+                    <div class="brand-logo-wrapper">
+                        <img src="assets/img/brands/brt.png" alt="BRT" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-wrapper">
+                        <img src="assets/img/brands/kawahara.png" alt="Kawahara" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-wrapper">
+                        <img src="assets/img/brands/dos.png" alt="Dos Muffler" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-wrapper">
+                        <img src="assets/img/brands/ngk.png" alt="NGK" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-wrapper">
+                        <img src="assets/img/brands/motul.png" alt="Motul" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-wrapper">
+                        <img src="assets/img/brands/rcb.png" alt="Racing BOY" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-wrapper">
+                        <img src="assets/img/brands/sss.png" alt="SSS" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+                <div class="brand-item">
+                    <div class="brand-logo-wrapper">
+                        <img src="assets/img/brands/tdr.png" alt="TDR" class="brand-logo" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-tag">
+                    <i class="fas fa-envelope"></i> Hubungi Kami
+                </div>
+                <h2>Hubungi Kami</h2>
+                <p>Konsultasi gratis untuk modifikasi motor impian Anda.</p>
+                <div class="carbon-line"></div>
+            </div>
+
+            <div class="contact-wrapper reveal">
+                <div class="contact-info">
+                    <h3>Informasi Kontak</h3>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                        <div class="contact-detail-text">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/6281288667347" target="_blank">0812-8866-7347</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="fab fa-tiktok"></i></div>
+                        <div class="contact-detail-text">
+                            <h4>TikTok</h4>
+                            <p><a href="https://www.tiktok.com/@donegarage20" target="_blank">@donegarage20</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="fab fa-instagram"></i></div>
+                        <div class="contact-detail-text">
+                            <h4>Instagram</h4>
+                            <p><a href="https://www.instagram.com/donegarage20/" target="_blank">@donegarage20</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-detail">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-detail-text">
+                            <h4>Lokasi</h4>
+                            <p>Jl. Dr. Setia Budi No.8 Blok H18, Pd. Kacang Tim., Kec. Pd. Aren, Tangerang Selatan</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://wa.me/6281288667347" target="_blank" class="social-btn"
+                            aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@donegarage20" target="_blank" class="social-btn"
+                            aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/donegarage20/" target="_blank" class="social-btn"
+                            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <a href="https://maps.app.goo.gl/dxZg95svQftgGFAp6" target="_blank" class="contact-map">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <span>Buka di Google Maps</span>
+                    <small style="color:var(--text-muted); font-size:0.8rem;">Klik untuk navigasi</small>
+                </a>
+            </div>
+
+            <!-- Custom Request Form -->
+            <div class="request-form reveal">
+                <h3 style="text-align:center; font-size:1.5rem; margin-bottom:8px; color:var(--text-primary);">
+                    <i class="fas fa-paper-plane text-primary"></i> Custom Request
+                </h3>
+                <p style="text-align:center; color:var(--text-muted); margin-bottom:28px; font-size:0.95rem;">
+                    Kirim permintaan custom modifikasi Anda
+                </p>
+                <form id="customRequestForm" onsubmit="sendCustomRequest(event)">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label><i class="fas fa-user"></i> Nama Lengkap</label>
+                            <input type="text" id="reqName" placeholder="Nama Anda" required>
+                        </div>
+                        <div class="input-group">
+                            <label><i class="fab fa-whatsapp"></i> Nomor WhatsApp</label>
+                            <input type="tel" id="reqPhone" placeholder="08xxxxxxxxxx" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label><i class="fas fa-motorcycle"></i> Tipe Motor</label>
+                            <input type="text" id="reqMotor" placeholder="Contoh: Honda Beat 2023" required>
+                        </div>
+                        <div class="input-group">
+                            <label><i class="fas fa-box"></i> Paket Minat</label>
+                            <select id="reqPaket" required>
+                                <option value="">Pilih Paket</option>
+                                <option value="Paket Harian">Paket Harian</option>
+                                <option value="Paket Touring">Paket Touring</option>
+                                <option value="Paket Balap">Paket Balap</option>
+                                <option value="Custom Total">Custom Total</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-group full-width">
+                        <label><i class="fas fa-comment-dots"></i> Detail Request</label>
+                        <textarea id="reqDetail" placeholder="Jelaskan detail modifikasi yang Anda inginkan..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn"
+                        style="width:100%; justify-content:center;">
+                        <i class="fab fa-whatsapp"></i> Kirim via WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/img/logo-donegarage.png" alt="D'One Garage" loading="lazy">
+                        <div class="footer-logo-text">D'<span>ONE</span> GARAGE</div>
+                    </div>
+                    <p>Spesialis Modifikasi & Custom Performance | Racing Spirit since 2012. Percayakan motor Anda
+                        kepada ahlinya.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/6281288667347" target="_blank" aria-label="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@donegarage20" target="_blank" aria-label="TikTok"><i
+                                class="fab fa-tiktok"></i></a>
+                        <a href="https://www.instagram.com/donegarage20/" target="_blank" aria-label="Instagram"><i
+                                class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Menu</h4>
+                    <a href="#home"><i class="fas fa-home"></i> Beranda</a>
+                    <a href="#about"><i class="fas fa-info-circle"></i> Tentang</a>
+                    <a href="#services"><i class="fas fa-cogs"></i> Layanan</a>
+                    <a href="#gallery"><i class="fas fa-images"></i> Galeri</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Layanan</h4>
+                    <a href="#services">Paket Harian</a>
+                    <a href="#services">Paket Touring</a>
+                    <a href="#services">Paket Balap</a>
+                    <a href="#services">Custom Parts</a>
+                </div>
+                <div class="footer-column">
+                    <h4>Dukungan</h4>
+                    <a href="#faq"><i class="fas fa-question-circle"></i> FAQ</a>
+                    <a href="#contact"><i class="fas fa-envelope"></i> Kontak</a>
+                    <a href="#estimator"><i class="fas fa-calculator"></i> Estimator</a>
+                    <a href="https://maps.app.goo.gl/dxZg95svQftgGFAp6" target="_blank"><i
+                            class="fas fa-map-marker-alt"></i> Lokasi</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 D'One Garage - All rights reserved. Performance Workshop Indonesia.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/6281288667347" target="_blank" class="floating-wa" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-close" aria-label="Close"><i class="fas fa-times"></i></button>
+        <img src="" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <script>
+        /* ===== THEME TOGGLE ===== */
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const html = document.documentElement;
+
+        // Check saved theme
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', savedTheme);
+        updateThemeIcon(savedTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const current = html.getAttribute('data-theme');
+            const next = current === 'dark' ? 'light' : 'dark';
+            html.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            updateThemeIcon(next);
+        });
+
+        function updateThemeIcon(theme) {
+            themeIcon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+        }
+
+        /* ===== MOBILE MENU ===== */
+        const hamburgerBtn = document.getElementById('hamburgerBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileOverlay = document.getElementById('mobileOverlay');
+        const mobileClose = document.getElementById('mobileClose');
+
+        function openMobileMenu() {
+            mobileMenu.classList.add('active');
+            mobileOverlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeMobileMenu() {
+            mobileMenu.classList.remove('active');
+            mobileOverlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        hamburgerBtn.addEventListener('click', openMobileMenu);
+        mobileClose.addEventListener('click', closeMobileMenu);
+        mobileOverlay.addEventListener('click', closeMobileMenu);
+
+        document.querySelectorAll('.mobile-menu a').forEach(link => {
+            link.addEventListener('click', closeMobileMenu);
+        });
+
+        /* ===== STICKY NAVBAR SCROLL ===== */
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            // Navbar shadow
+            if (scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Back to top visibility
+            if (scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            // Active nav link
+            updateActiveNav();
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        /* ===== ACTIVE NAV LINK ===== */
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-menu a, .mobile-menu a');
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        /* ===== SCROLL REVEAL ===== */
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('revealed');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        /* ===== FAQ TOGGLE ===== */
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Open clicked if it wasn't active
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        /* ===== LIGHTBOX ===== */
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+
+        function openLightbox(element) {
+            const img = element.querySelector('img');
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            lightbox.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+               /* ===== ESTIMATOR DENGAN HARGA REALISTIS ===== */
+        
+        // Fungsi format Rupiah
+        function formatRupiah(num) {
+            return 'Rp ' + Math.round(num).toLocaleString('id-ID');
+        }
+
+        // Base harga paket per motor
+        const basePrices = {
+            beat: { harian: 1800000, touring: 5000000, balap: 10000000 },
+            nmax: { harian: 2500000, touring: 6500000, balap: 14000000 },
+            vario: { harian: 2200000, touring: 5500000, balap: 11000000 },
+            r15: { harian: 3000000, touring: 8000000, balap: 18000000 },
+            satria: { harian: 2800000, touring: 7500000, balap: 16000000 }
+        };
+
+        // Faktor pengali per motor
+        const motorFactor = {
+            beat: 1,
+            vario: 1,
+            nmax: 1.2,
+            r15: 1.3,
+            satria: 1.3
+        };
+
+        // Harga upgrade REALISTIS
+        const upgradePrices = {
+            nokenas: 1200000,
+            stage2: 1800000,
+            knalpot: 2000000,
+            boreup180: 3500000,
+            boreup200: 5500000,
+            porting: 800000,
+            ecu: 1500000,
+            dyno: 500000
+        };
+
+        const upgradeNames = {
+            nokenas: 'Custom Noken As',
+            stage2: 'Stage 2 Noken',
+            knalpot: 'Knalpot Racing',
+            boreup180: 'Bore Up 180cc',
+            boreup200: 'Bore Up 200cc',
+            porting: 'Porting & Polish',
+            ecu: 'ECU Tune',
+            dyno: 'Dyno Test'
+        };
+
+        // Fungsi hitung estimasi
+        function hitungEstimasi() {
+            const motor = document.getElementById('motorSelect').value;
+            const paket = document.getElementById('paketSelect').value;
+            const budget = parseInt(document.getElementById('budgetSelect')?.value || 0);
+
+            if (!motor || !paket) {
+                document.getElementById('resultPrice').textContent = '-';
+                document.getElementById('resultText').textContent = 'Pilih motor dan paket terlebih dahulu';
+                document.getElementById('recommendedSetup').style.display = 'none';
+                return;
+            }
+
+            // Hitung total
+            let total = basePrices[motor]?.[paket] || 0;
+            const selectedUpgrades = [];
+
+            document.querySelectorAll('.check-grid input[type="checkbox"]:checked').forEach(cb => {
+                total += upgradePrices[cb.value];
+                selectedUpgrades.push(upgradeNames[cb.value]);
+            });
+
+            // Apply faktor motor
+            total = total * motorFactor[motor];
+
+            // Tampilkan hasil
+            const resultPrice = document.getElementById('resultPrice');
+            const resultText = document.getElementById('resultText');
+            const setupDiv = document.getElementById('recommendedSetup');
+
+            resultPrice.textContent = formatRupiah(total);
+
+            // Cek budget
+            if (budget && total > budget) {
+                resultText.innerHTML = '⚠️ Estimasi melebihi budget, rekomendasi akan disesuaikan saat konsultasi.';
+                resultText.style.color = '#ffaa00';
+            } else if (budget && total <= budget) {
+                resultText.innerHTML = '✅ Estimasi dalam budget Anda! Konsultasikan sekarang.';
+                resultText.style.color = '#4caf50';
+            } else {
+                resultText.innerHTML = 'Estimasi biaya modifikasi';
+                resultText.style.color = 'var(--text-muted)';
+            }
+
+            // Tampilkan upgrade yang dipilih
+            if (selectedUpgrades.length > 0) {
+                setupDiv.style.display = 'block';
+                setupDiv.innerHTML = '<strong style="color:var(--primary);">Upgrade dipilih:</strong><br>' +
+                    selectedUpgrades.map(u => '• ' + u).join('<br>');
+            } else {
+                setupDiv.style.display = 'none';
+            }
+
+            // Simpan data untuk tombol WA
+            window.lastEstimate = {
+                motor: document.getElementById('motorSelect').options[document.getElementById('motorSelect').selectedIndex]?.text,
+                paket: document.getElementById('paketSelect').options[document.getElementById('paketSelect').selectedIndex]?.text,
+                total: total,
+                upgrades: selectedUpgrades
+            };
+        }
+
+        /* ===== FUNGSI WA & SIMPAN ESTIMASI ===== */
+        
+        // Konsultasi via WA dengan data estimator
+        function konsultasiEstimator() {
+            if (!window.lastEstimate) {
+                window.open('https://wa.me/6281288667347?text=Halo%20D%27One%20Garage%2C%20saya%20ingin%20konsultasi%20modifikasi', '_blank');
+                return;
+            }
+
+            const est = window.lastEstimate;
+            const message = `Halo D'One Garage!%0A%0A` +
+                `Saya ingin konsultasi modifikasi berdasarkan estimator:%0A%0A` +
+                `🏍️ Motor: ${est.motor || '-'}%0A` +
+                `📦 Paket: ${est.paket || '-'}%0A` +
+                `💰 Estimasi: ${formatRupiah(est.total)}%0A` +
+                `🔧 Upgrade: ${est.upgrades.length > 0 ? est.upgrades.join(', ') : 'Tidak ada'}%0A%0A` +
+                `Mohon infonya untuk detail lebih lanjut. Terima kasih!`;
+
+            window.open(`https://wa.me/6281288667347?text=${message}`, '_blank');
+        }
+
+        // Simpan estimasi ke localStorage
+        function saveEstimate() {
+            if (!window.lastEstimate) {
+                alert('Silakan hitung estimasi terlebih dahulu');
+                return;
+            }
+
+            const estimates = JSON.parse(localStorage.getItem('dOneEstimates') || '[]');
+            estimates.push({
+                ...window.lastEstimate,
+                date: new Date().toISOString()
+            });
+            localStorage.setItem('dOneEstimates', JSON.stringify(estimates));
+            alert('✅ Estimasi berhasil disimpan! Tim kami akan menghubungi Anda segera.');
+        }
+
+        // Custom Request via WA
+        function sendCustomRequest(e) {
+            e.preventDefault();
+            const name = document.getElementById('reqName')?.value || '';
+            const phone = document.getElementById('reqPhone')?.value || '';
+            const motor = document.getElementById('reqMotor')?.value || '';
+            const paket = document.getElementById('reqPaket')?.value || '';
+            const detail = document.getElementById('reqDetail')?.value || '';
+
+            const message = `Halo D'One Garage!%0A%0A` +
+                `Saya ingin custom modifikasi:%0A` +
+                `📛 Nama: ${name}%0A` +
+                `📱 WA: ${phone}%0A` +
+                `🏍️ Motor: ${motor}%0A` +
+                `📦 Paket: ${paket}%0A` +
+                `📝 Detail: ${detail}`;
+
+            window.open(`https://wa.me/6281288667347?text=${message}`, '_blank');
+        }
+
+        /* ===== PASANG EVENT LISTENER ===== */
+        
+        // Tombol konsultasi WA estimator
+        const waEstimateBtn = document.querySelector('.estimator-result .btn-wa');
+        if (waEstimateBtn) {
+            waEstimateBtn.removeAttribute('href');
+            waEstimateBtn.addEventListener('click', konsultasiEstimator);
+        }
+
+        // Tombol simpan estimasi
+        const saveEstimateBtn = document.getElementById('saveEstimateBtn');
+        if (saveEstimateBtn) {
+            saveEstimateBtn.addEventListener('click', saveEstimate);
+        }
+
+        /* ===== COUNTER ANIMATION ===== */
+        function animateCounters() {
+            const counters = document.querySelectorAll('.stat-number, .hero-stat-number');
+            counters.forEach(counter => {
+                const text = counter.textContent;
+                const match = text.match(/(\d+)/);
+                if (!match) return;
+
+                const target = parseInt(match[0]);
+                const suffix = text.replace(match[0], '');
+                let current = 0;
+                const increment = target / 60;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    counter.textContent = Math.floor(current) + suffix;
+                }, 25);
+            });
+        }
+
+        const aboutSection = document.getElementById('about');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (aboutSection) counterObserver.observe(aboutSection);
+    </script>
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "AutomotiveBusiness",
+            "name": "D'One Garage",
+            "description": "Spesialis Modifikasi, Bore Up & Custom Performance Motor. Racing Spirit since 2012.",
+            "url": "https://donegarage.com",
+            "telephone": "+6281288667347",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Jl. Dr. Setia Budi No.8 Blok H18, Pd. Kacang Tim.",
+                "addressLocality": "Tangerang Selatan",
+                "addressRegion": "Banten",
+                "postalCode": "15226",
+                "addressCountry": "ID"
+            },
+            "sameAs": [
+                "https://www.instagram.com/donegarage20/",
+                "https://www.tiktok.com/@donegarage20"
+            ],
+            "priceRange": "Rp1.500.000 - Rp20.000.000+",
+            "openingHours": "Mo-Sa 08:00-18:00"
+        }
+    </script>
+
+    <!-- Script Three.js untuk 3D automotive (ditambahkan dengan modul) -->
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.128.0/build/three.module.js" } }
+    </script>
+
+    <script type="module">
+        import * as THREE from 'three';
+        // Setup 3D gears & particles (tidak mengganggu layout)
+        const canvas = document.getElementById('bg-canvas');
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.set(0, 2, 12);
+        const renderer = new THREE.WebGLRenderer({ canvas, alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setClearColor(0x000000, 0);
+        
+        // Particles (sparks)
+        const particleCount = 800;
+        const particlesGeometry = new THREE.BufferGeometry();
+        const posArray = new Float32Array(particleCount * 3);
+        for(let i=0; i<particleCount; i++) {
+            posArray[i*3] = (Math.random() - 0.5) * 20;
+            posArray[i*3+1] = (Math.random() - 0.5) * 12;
+            posArray[i*3+2] = (Math.random() - 0.5) * 15 - 5;
+        }
+        particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+        const particlesMaterial = new THREE.PointsMaterial({ color: 0xe31837, size: 0.08, transparent: true, opacity: 0.5 });
+        const particles = new THREE.Points(particlesGeometry, particlesMaterial);
+        scene.add(particles);
+        
+        // Gears
+        const gearGroup = new THREE.Group();
+        const gearMat = new THREE.MeshStandardMaterial({ color: 0xe31837, roughness: 0.3, metalness: 0.8 });
+        const gearMatDark = new THREE.MeshStandardMaterial({ color: 0x888888, roughness: 0.5, metalness: 0.6 });
+        const createGear = (radius, thickness, teeth, colorMat, pos) => {
+            const gearGeo = new THREE.CylinderGeometry(radius, radius, thickness, teeth);
+            const gear = new THREE.Mesh(gearGeo, colorMat);
+            gear.position.set(pos.x, pos.y, pos.z);
+            return gear;
+        };
+        gearGroup.add(createGear(1.2, 0.3, 32, gearMat, { x: -2, y: 0.5, z: -1 }));
+        gearGroup.add(createGear(0.8, 0.3, 24, gearMatDark, { x: -0.5, y: -0.2, z: -1.2 }));
+        gearGroup.add(createGear(1.0, 0.3, 28, gearMat, { x: 1.8, y: 0.8, z: -1 }));
+        gearGroup.add(createGear(0.7, 0.3, 20, gearMatDark, { x: 2.5, y: -0.3, z: -1.3 }));
+        scene.add(gearGroup);
+        
+        const ringGeo = new THREE.TorusGeometry(1.2, 0.08, 64, 200);
+        const ringMat = new THREE.MeshStandardMaterial({ color: 0xe31837, emissive: 0x330000 });
+        const ring = new THREE.Mesh(ringGeo, ringMat);
+        ring.position.set(0, -1, -2);
+        scene.add(ring);
+        
+        const ambientLight = new THREE.AmbientLight(0x404040);
+        scene.add(ambientLight);
+        const dirLight = new THREE.DirectionalLight(0xffffff, 1);
+        dirLight.position.set(2, 5, 3);
+        scene.add(dirLight);
+        
+        let time = 0;
+        function animate() {
+            requestAnimationFrame(animate);
+            time += 0.01;
+            gearGroup.children.forEach((child, idx) => { child.rotation.z += (idx % 2 === 0 ? 0.02 : -0.02); });
+            ring.rotation.x = Math.sin(time * 0.5) * 0.2;
+            ring.rotation.z = time * 0.5;
+            particles.rotation.y = time * 0.1;
+            particles.rotation.x = Math.sin(time * 0.2) * 0.1;
+            camera.position.z = 12 + Math.sin(time * 0.2) * 0.2;
+            renderer.render(scene, camera);
+        }
+        animate();
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+        
+        // Sesuaikan warna 3D dengan tema
+        const html = document.documentElement;
+        const update3DColors = (theme) => {
+            const newColor = theme === 'dark' ? 0xe31837 : 0xb0102c;
+            particlesMaterial.color.setHex(newColor);
+            gearMat.color.setHex(newColor);
+            ringMat.color.setHex(newColor);
+        };
+        const observer = new MutationObserver(() => {
+            update3DColors(html.getAttribute('data-theme'));
+        });
+        observer.observe(html, { attributes: true, attributeFilter: ['data-theme'] });
+        update3DColors('dark');
+    </script>
+
+    <!-- Mouse Effects & 3D Interactive -->
+<canvas id="mouse-particle-canvas"></canvas>
+<div class="custom-cursor" id="customCursor"></div>
+<div class="custom-cursor-ring" id="customCursorRing"></div>
+<div class="mouse-glow" id="mouseGlow"></div>
+
+<script>
+    /* ===== 3D MOUSE EFFECTS & PARTICLE TRAIL ===== */
+    (function() {
+        // Custom cursor movement
+        const cursor = document.getElementById('customCursor');
+        const cursorRing = document.getElementById('customCursorRing');
+        const mouseGlow = document.getElementById('mouseGlow');
+        
+        let mouseX = 0, mouseY = 0;
+        let cursorX = 0, cursorY = 0;
+        let ringX = 0, ringY = 0;
+        
+        document.addEventListener('mousemove', (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
+            
+            // Update glow position instantly
+            if (mouseGlow) {
+                mouseGlow.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+            }
+        });
+        
+        // Smooth follow for cursor
+        function animateCursor() {
+            cursorX += (mouseX - cursorX) * 0.2;
+            cursorY += (mouseY - cursorY) * 0.2;
+            ringX += (mouseX - ringX) * 0.15;
+            ringY += (mouseY - ringY) * 0.15;
+            
+            if (cursor) {
+                cursor.style.transform = `translate(${cursorX}px, ${cursorY}px) translate(-50%, -50%)`;
+            }
+            if (cursorRing) {
+                cursorRing.style.transform = `translate(${ringX}px, ${ringY}px) translate(-50%, -50%)`;
+            }
+            
+            requestAnimationFrame(animateCursor);
+        }
+        animateCursor();
+        
+        // Hover effect for interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .btn, .service-card, .gallery-item, .faq-question, .contact-map, .social-btn, .stat-card, .brand-item, .custom-service-tag, .theme-toggle, .hamburger, .logo');
+        
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor?.classList.add('hover');
+                cursorRing?.classList.add('hover');
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor?.classList.remove('hover');
+                cursorRing?.classList.remove('hover');
+            });
+        });
+        
+        // Particle trail system (2D canvas)
+        const particleCanvas = document.getElementById('mouse-particle-canvas');
+        const ctx = particleCanvas?.getContext('2d');
+        
+        if (particleCanvas && ctx) {
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            let particles = [];
+            let mousePos = { x: width/2, y: height/2 };
+            
+            function resizeCanvas() {
+                width = window.innerWidth;
+                height = window.innerHeight;
+                particleCanvas.width = width;
+                particleCanvas.height = height;
+            }
+            
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+            
+            document.addEventListener('mousemove', (e) => {
+                mousePos = { x: e.clientX, y: e.clientY };
+                
+                // Add particle trail
+                for (let i = 0; i < 3; i++) {
+                    particles.push({
+                        x: mousePos.x + (Math.random() - 0.5) * 8,
+                        y: mousePos.y + (Math.random() - 0.5) * 8,
+                        size: Math.random() * 4 + 2,
+                        alpha: 0.8,
+                        vx: (Math.random() - 0.5) * 1.5,
+                        vy: (Math.random() - 0.5) * 1.5 - 1,
+                        life: 1,
+                        color: `hsl(${Math.random() * 10 + 350}, 80%, 60%)`
+                    });
+                }
+            });
+            
+            function animateParticles() {
+                ctx.clearRect(0, 0, width, height);
+                
+                // Update and draw particles
+                for (let i = 0; i < particles.length; i++) {
+                    const p = particles[i];
+                    p.x += p.vx;
+                    p.y += p.vy;
+                    p.life -= 0.02;
+                    p.alpha = p.life * 0.8;
+                    p.size *= 0.98;
+                    
+                    if (p.life <= 0 || p.size < 0.5) {
+                        particles.splice(i, 1);
+                        i--;
+                        continue;
+                    }
+                    
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(227, 24, 55, ${p.alpha * 0.6})`;
+                    ctx.fill();
+                    
+                    // Inner glow
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, p.size * 0.5, 0, Math.PI * 2);
+                    ctx.fillStyle = `rgba(255, 100, 100, ${p.alpha * 0.8})`;
+                    ctx.fill();
+                }
+                
+                // Limit particle count
+                if (particles.length > 150) {
+                    particles = particles.slice(-120);
+                }
+                
+                requestAnimationFrame(animateParticles);
+            }
+            
+            animateParticles();
+        }
+        
+        // 3D TILT EFFECT for cards (parallax 3D)
+        const tiltElements = document.querySelectorAll('.service-card, .testimonial-card, .stat-card, .brand-logo-wrapper');
+        
+        tiltElements.forEach(el => {
+            el.addEventListener('mousemove', (e) => {
+                const rect = el.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                const rotateX = (y - centerY) / 20;
+                const rotateY = (centerX - x) / 20;
+                
+                el.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+            });
+            
+            el.addEventListener('mouseleave', () => {
+                el.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+            });
+            
+            // Reset transition for smooth return
+            el.style.transition = 'transform 0.3s ease';
+        });
+        
+        // Hide custom cursor on mobile
+        function checkMobile() {
+            if (window.innerWidth < 768) {
+                if (cursor) cursor.style.display = 'none';
+                if (cursorRing) cursorRing.style.display = 'none';
+                if (mouseGlow) mouseGlow.style.display = 'none';
+                document.body.style.cursor = 'auto';
+            } else {
+                if (cursor) cursor.style.display = 'block';
+                if (cursorRing) cursorRing.style.display = 'block';
+                if (mouseGlow) mouseGlow.style.display = 'block';
+            }
+        }
+        
+        window.addEventListener('resize', checkMobile);
+        checkMobile();
+    })();
+</script>
+</body>
+
+</html>
